@@ -1,0 +1,75 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+apply plugin: 'me.tatarka.retrolambda'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '25.0.0'
+
+    defaultConfig {
+        applicationId "com.zte.shawn.lotterycheck"
+        minSdkVersion 17
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    dataBinding {
+        enabled =true
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+    }
+}
+
+dependencies {
+    //module
+    compile project(':lottery_core_module:daletou')
+    compile project(':MPChartLib')
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+
+    testCompile 'junit:junit:4.12'
+
+
+    compile 'com.facebook.stetho:stetho:1.5.0'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'org.greenrobot:greendao:3.2.0'
+    compile 'com.yanzhenjie:recyclerview-swipe:1.0.2'
+    compile 'com.github.lecho:hellocharts-library:1.5.8@aar'
+    compile 'com.getbase:floatingactionbutton:1.10.1'
+
+
+
+    //test
+    testCompile 'junit:junit:4.12'
+    androidTestCompile 'org.testng:testng:6.9.6'
+    // Testing-only dependencies
+    androidTestCompile 'com.android.support.test:runner:0.3'
+    // Set this dependency to use JUnit 4 rules
+    androidTestCompile 'com.android.support.test:rules:0.3'
+    // Set this dependency to build and run Espresso tests
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2'
+    // Set this dependency to build and run UI Automator tests
+    //androidTestCompile 'com.android.support.test.uiautomator:uiautomator-v17'
+    androidTestCompile 'org.mockito:mockito-core:1.9.5'
+    androidTestCompile 'com.google.dexmaker:dexmaker:1.0'
+    androidTestCompile 'com.google.dexmaker:dexmaker-mockito:1.2'
+    androidTestCompile 'com.android.support:support-annotations:23.4.0'
+
+}

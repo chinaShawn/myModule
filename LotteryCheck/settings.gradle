@@ -1,0 +1,2 @@
+include ':app', ':lottery_base_module:networkmodule', ':lottery_base_module:persistence', ':shuangseqiu',
+        ':lottery_base_module:utiltools', ':aop', ":MPChartLib", ':lottery_core_module:daletou'

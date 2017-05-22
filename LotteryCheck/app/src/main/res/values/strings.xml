@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">LotteryCheck</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_sync">同步</string>
+    <string name="dlt">大乐透</string>
+    <string name="dle_subtitle">这是一款够用的彩票管理工具</string>
+    <string name="dlthit">大乐透中奖详情</string>
+    <string name="lottery">彩票</string>
+    <string name="red1c">红1</string>
+    <string name="red2">红2</string>
+    <string name="red3">红3</string>
+    <string name="red4">红4</string>
+    <string name="red5">红5</string>
+    <string name="green1">绿1</string>
+    <string name="green2">绿2</string>
+    <string name="date">日期(号)</string>
+    <string name="is_over">剩余期数</string>
+    <string name="times">期数</string>
+
+
+
+
+    <!-- 特殊符号-->
+    <string name="maohao">:</string>
+
+
+
+
+    <string name="save">保存</string>
+    <string name="delete">确认删除</string>
+
+
+
+
+    <!-- 中奖-->
+    <string name="ishit">是否中奖</string>
+    <string name="hitone">一等奖</string>
+    <string name="hittwo">二等奖</string>
+    <string name="hitthree">三等奖</string>
+    <string name="hitfour">四等奖</string>
+    <string name="hitfive">五等奖</string>
+    <string name="hitsix">六等奖</string>
+    <string name="hitno">无</string>
+
+
+
+</resources>

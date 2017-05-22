@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/tools"
+    android:layout_margin="@dimen/fab_margin"
+    android:layout_height="match_parent">
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        app:layout_behavior="com.zte.shawn.lotterycheck.behaviour.RecycleViewFloatBehaviour"
+        android:id="@+id/multiple_actions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        fab:fab_addButtonColorNormal="@color/violet"
+        fab:fab_addButtonColorPressed="@color/lavender"
+        fab:fab_addButtonPlusIconColor="@color/red"
+        fab:fab_labelStyle="@style/menu_labels_style"
+        >
+
+        <com.getbase.floatingactionbutton.AddFloatingActionButton
+            android:id="@+id/action_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_plusIconColor="@color/red"
+            fab:fab_colorPressed="@color/lavender"
+            fab:fab_colorNormal="@color/violet"
+            fab:fab_title="Action A" />
+
+        <com.getbase.floatingactionbutton.AddFloatingActionButton
+            android:id="@+id/action_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_title="Action with a very long name that won\'t fit on the screen"
+            fab:fab_plusIconColor="@color/red"
+            fab:fab_colorPressed="@color/lavender"
+            fab:fab_colorNormal="@color/violet"
+            />
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</RelativeLayout>

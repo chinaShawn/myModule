@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/skyblue">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:hint="@string/date"
+        android:id="@+id/date"
+        android:gravity="center"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:hint="@string/red1c"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:id="@+id/red1"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:hint="@string/red2"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:id="@+id/red2"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:hint="@string/red3"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:id="@+id/red3"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:hint="@string/red4"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:id="@+id/red4"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:hint="@string/red5"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:id="@+id/red5"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:hint="@string/green1"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:id="@+id/green1"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:hint="@string/green2"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:id="@+id/green2"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:hint="@string/ishit"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:id="@+id/isHit"
+        />
+
+</LinearLayout>
